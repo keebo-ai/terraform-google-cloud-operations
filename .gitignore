@@ -46,3 +46,6 @@ crash.log
 **/*.tfvars
 
 credentials.json
+
+# IntelliJ
+.idea

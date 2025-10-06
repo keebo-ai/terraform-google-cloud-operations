@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+-
 module "gcloud-upsert" {
-  source  = "terraform-google-modules/gcloud/google"
-  version = "~> 3.0"
+  source  = "github.com/keebo-ai/terraform-google-cloud"
+  version = "4.0.1-beta.1"
 
   platform              = "linux"
   additional_components = ["beta"]
@@ -35,8 +35,8 @@ module "gcloud-upsert" {
 }
 
 module "gcloud-destroy" {
-  source  = "terraform-google-modules/gcloud/google"
-  version = "~> 3.0"
+  source  = "github.com/keebo-ai/terraform-google-cloud"
+  version = "4.0.1-beta.1"
 
   platform              = "linux"
   gcloud_sdk_version    = "325.0.0"
