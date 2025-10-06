@@ -15,7 +15,7 @@
  */
 
 module "gcloud-upsert" {
-  source  = "github.com/keebo-ai/terraform-google-cloud?ref=v4.0.1-beta.1"
+  source  = "git::https://github.com/keebo-ai/terraform-google-cloud?ref=v4.0.1-beta.1"
 
   platform              = "linux"
   additional_components = ["beta"]
